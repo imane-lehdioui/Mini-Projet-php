@@ -1,0 +1,57 @@
+<HTML lang=fr xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+   <HEAD>
+        <TITLE>Inscription en ligne</TITLE>
+
+</HEAD>
+<BODY >
+	
+<DIV id=global >
+<form action="facture.php" method="POST">
+  <fieldset>
+   
+    <legend>Formulaire </legend>
+    <input type="radio" id="male" name="gender" value="male">Mr
+    <input type="radio" id="male" name="gender" value="male">Mme
+    <input type="radio" id="male" name="gender" value="male">Mlle
+    <br>
+   
+    <label for="nom">Nom:</label>
+    <input type="text" name="nom" id="nom" />
+    <br />
+    <label for="prenom">Prénom:</label>
+    <input type="text" name="prenom" id="prenom" />
+    <br />
+
+	<label>Produit:</label>
+	<select name="produits">
+		<option value="telephone">Télephone</option>
+		<option value="montre">Montre</option>
+		<option value="bracelet">Bracelet</option>
+	</select>
+    <br />
+
+    <label for="Quantité">Quantité:</label>
+    <input type="text" name="quantite" size="13" id="Quantité" />
+    <br />
+    <label >Age:</label>
+          <select  name="age">
+            <option value="0-9">0-9</option>
+            <option value="10-19">10-19</option>
+            <option value="20-29">20-29</option>
+            <option value="+30">+330</option>
+         </select>
+    <br />
+
+    
+    <input type="checkbox" name="livraisonD" onclick=""> Livraison à domicile
+    <input type="checkbox" name="paimentcash" onclick=""> Paiement cash
+    <br/><br/>
+    <button>Annuler</button> 
+    <input type="Submit" value="Commander">
+
+  </fieldset>
+</form> 
+</DIV>
+
+</BODY>
+</HTML>
